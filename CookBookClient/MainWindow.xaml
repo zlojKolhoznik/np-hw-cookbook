@@ -1,0 +1,19 @@
+﻿<Window x:Class="CookBookClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CookBookClient"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="800">
+    <StackPanel>
+        <StackPanel x:Name="IngredientsInputs" HorizontalAlignment="Center">
+            <TextBox FontSize="20" Margin="20" Padding="5" Width="300"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="Add ingredient" Padding="5" Margin="10 5" Click="AddIngredientButtonClick"/>
+            <Button Content="Search for recipes" Padding="5" Margin="10 5" Click="SearchForRecipesButtonClick"/>
+            <Button Content="Add new recipe" Padding="5" Margin="10 5" Click="AddRecipeButtonClick"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
